@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>From the depths</title>
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <div class="title">
+                <picture class="ftdlogo">
+                    <img src="images/ftd_logo.png" alt="From the depths">
+                </picture>
+                <h1 class="title">leikurinn From the depths</h1> 
+                <h2 class="title">Bjartur Sigurjónsson - VEFÞ1VG05AU Verkefni 7</h2>
+            </div>
+            <div class="topnav" id="myTopnav">
+                <a href="#hvaðErFTD">Hvað er From the depths?</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Fylki
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#dwg">Deepwater guard</a>
+                    <a href="#ow">Onyx watch</a>
+                    <a href="#wf">White fleyers</a>
+                    <a href="#tg">Twin guard</a>
+                    <a href="#lh">Lightning hoods</a>
+                    <a href="#ss">Steel striders</a>
+                    <a href="#gt">Grey talons</a>
+                    <a href="#sd">Scarlet dawn</a>
+                  </div>
+                </div> 
+                <a href="#lok">Loka orð</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+              </div>
+        </div>
+
+        <div class="main">
+            <h3 id="hvaðErFTD">Hvað er From the depths?</h3>
+            <p>From the depths gengur út á að búa til stríðs tæki og nota og nota þau til að berjast gegn andstæðingum. Þetta er mjög skapandi leikur þar sem maður hefur aðgang að yfir þúsund kubba tegundum. </p>
+            <p>From the depths kom fyrst út í public beta fyrst út árið 2013 en kom út 6 nóvember 2020</p>
+            <iframe class="trailer"
+                src="https://www.youtube.com/embed/QhTNESwAzs4">
+            </iframe>
+            <p>Mörg mismunandi mode eru í boði í leiknum og þau eru öll opin fyrir allskonar aðferðum spilarans til að spila leikinn, þau mode sem eru í boði í leiknum eru:</p>
+            <ul>
+                <li>Design mode : þú getur byggt hvað sem þú villt, hlaðið inn og eitt þínum eigin og annara manna vélum.</li>
+                <li>Campaingn : þú þarft að fá efnivið á ákveðnum stöðum og með því að vinna óvini til að byggja upp heri og nota þá til að vinnast á öllum andstæðingunum.</li>
+                <li>Story missions : stutt verkefni þar sem þú byrjar með eitthvað ákveðin her og stjórnar honum til að vinnast á inkomandi árás.</li>
+                <li>Adventure : þú þarft að byggja upp vélina þína á meðan óvinir koma að þér úr öllum áttum</li>
+                <li>Battels : þú getur set upp bardaga og séð hvernig hann fer. Fólk setur upp mót þar sem fólk sendir inn sínar vélar og þá er þetta mode notað til að seta upp bardagana.</li>
+            </ul>
+            <p>Leikurinn er þekktur fyrir að vera einstaklega flókin og þá sérstaklega til að byrja með þar sem þú færð allt í hendurnar á sama tíma þegar þú byrjar leikinn og þarft að kunna á marga hluta þess til að koma einhverju í gang. Þó er innbyggð kennsla í leiknum en eins og martinciopants sagði svo vel „The game has less og a learning curve and more off a learning cliff, on fire, covered in bears“.</p>
+                <picture>
+                    <source media="(min-width:995px)" srcset="images/tyr_big.jpg">
+                    <source media="(min-width:550px)" srcset="images/tyr_mid.jpg">
+                    <img src="images/tyr_tiny.jpg" alt="þversnið af tyr" style="width:auto;">
+                </picture>
+            <h3>Factions</h3>
+            <p>Í leiknum er heill hellingur af innbyggðum vélum sem eru notaðar sem andstæðingar. Vélarnar eru flokkaðar í 7 fylkingar og hefur hver fylking sín einkenni og sögu.</p>
+            <ul class="factionsList">
+                <li class="faction" id="dwg"> <img class="factionLogo" src="images/deepwader_guard.svg"> Deepwater guard
+                    <ul class="feachures">
+                        <li>kaupmenn frá Cold Loch</li>
+                        <li>Gamaldags vélar, að mestu skip.</li>
+                        <li>Notar mest hæg skjótandi fallbyssur með stórum skeljum</li>
+                        <li>Oft stórar vélar gerðar úr lélegum efnivið og lítill skotkraftur miðað við stærð</li>
+                    </ul>
+                </li>
+                <li class="faction" id="ow"> <img class="factionLogo" src="images/onyx_watch.svg"> Onyx watch
+                    <ul class="feachures">
+                        <li>upprunalegu kaupmenn landsins og eiga þar djúpar rætur</li>
+                        <li>Skipin þeirra líkjast oft kastölum</li>
+                        <li>Nota mikið stórar fallbyssur</li>
+                        <li>Oft stór skip sem hafa hálftóm rími</li>
+                    </ul>
+                </li>
+                <li class="faction" id="wf"> <img class="factionLogo" src="images/white_fleyers.svg"> White fleyers
+                    <ul class="feachures">
+                        <li>ofsatrúar sem tilbiðja zealots</li>
+                        <li>Nota mikið hvöss horn</li>
+                        <li>Nota mest hraðskjótandi byssur</li>
+                        <li>Ráðast oft á með því að klessa á andstæðing sinn</li>
+                    </ul>
+                </li>
+                <li class="faction" id="tg"> <img class="factionLogo" src="images/twin_guard.svg"> Twin guard
+                    <ul class="feachures">
+                        <li>flúið AI búið til af Scarlet dawn</li>
+                        <li>Hafa tvær gerðir, karlkyns skip sem bera fallbyssur og flugskeyti,  og kvenkyns skip sem bera flugskeyti og laesera.</li>
+                        <li>Karlkyns skip eru gerð úr alloy og eða metal og kvenkyns skip eru gerð af mestu úr alloy.</li>
+                        <li>Þeir nota skyldi lítið</li>
+                        <li>Þeir hafa nokkrar flugvélar en eru lang mest með skip</li>
+                    </ul>
+                </li>
+                <li class="faction" id="lh"> <img class="factionLogo" src="images/lightning_hoods.svg"> Lighning hoods
+                    <ul class="feachures">
+                        <li>fylkið var stofnað eftir að kapteinn þeirra náði að stela tækni annara fylkja</li>
+                        <li>Þeir fókusar á mjög hraðar vélar</li>
+                        <li>Nota mest laeser og pac vopn</li>
+                        <li>Þeir hara margar góðar flugvélar</li>
+                    </ul>
+                </li>
+                <li class="faction" id="ss"> <img class="factionLogo" src="images/steel_striders.svg"> Steel striders
+                    <ul class="feachures">
+                        <li>nútímalegur her</li>
+                        <li>Mest lang drifa hraðsjóðandi byssur og langdrifa flugskeyti</li>
+                        <li>All járn að utan</li>
+                        <li>Notar lítið framtíðarleg vopn, eins og laesers og pac</li>
+                    </ul>
+                </li>
+                <li class="faction" id="gt"> <img class="factionLogo" src="images/grey_talons.svg"> Grey talons
+                    <ul class="feachures">
+                        <li>ættbálkur loftbúa</li>
+                        <li>Allar vélar fljúga</li>
+                        <li>Að mestu nota byssur</li>
+                        <li>Nokkrir stílar</li>
+                    </ul>
+                </li>
+                <li class="faction" id="sd"> <img class="factionLogo" src="images/scarlet_dawn.svg"> Scarlet dawn
+                    <ul class="feachures">
+                        <li>koma til þessa hluta heims í leit af auðlindum</li>
+                        <li>4 klasa véla kerfi</li>
+                        <li>Nota mikið sjálfsvarnar búnað</li>
+                        <li>Annað hvort léttar vélar með litlum sem engum skjöldum eða mjög þundar og ýkt margir skyldir</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 id="lok">Loka orð</h3>
+            <p>Persónulega finnst mér eitt það besta við leikin er að óvinirnir og þú sem spilar hafið aðgang að sömu kubbum og allt sem þeir gera gætir þú gert. Flestir óvinir eru einnig gerðir af mjög góðum spiluðum sem hafa sent inn sínar vélar sem hafa svo verið notaðar í leikinn.</p>
+            <picture>
+            <source media="(min-width:900px)" srcset="images/Marauder_big.jpg">
+                <source media="(min-width:600px)" srcset="images/Marauder_mid.jpg">
+                <img src="images/Marauder_smol.jpg" alt="þversnið af tyr" style="width:auto;">
+            </picture>
+            <p>Þó að leikurinn sé nú komin út og er ekki lengur í beta vantar en að slípa leikin, sumir hlutir hafa ekki breyst síðan í mjög snemma í ferlinu. t.d. eru sum hljóð mjög skerandi og leiðinleg, þar á meðal smg hlóðið:</p>
+            <audio controls src="SMG fire.mp3"></audio>
+            <p>From the depths er uppáhalds leikurinn minn og þó að ég sé nú þegar búin að spila leikinn í meira en 300 klukkutíma samtals þá hef ég bara rétt byrjað skrapa af ystu brún af því sem leikurinn hefur upp á að bjóða.</p>
+        </div>
+
+        <div class="footer">
+            <div class="upplysingar">
+                <ul>
+                    <li>VEFÞ1VG05AU</li>
+                    <li>Bjartur Sigurjónsson</li>
+                    <li>bjartur2004@gmail.com</li>
+                </ul>
+            </div>
+            <div class="verkefnaListi">
+                <ul>
+                    <li><a href="../Verkefni-1">Verkefni 1</a></li>
+                    <li><a href="../Verkefni-2/verkefni-21-22/">Verkefni 2</a></li>
+                    <li><a href="../Verkefni-3">Verkefni 3</a></li>
+                    <li><a href="../Verkefni-4">Verkefni 4</a></li>
+                    <li><a href="../Verkefni-5">Verkefni 5</a></li>
+                    <li><a href="../Verkefni-6">Verkefni 6</a></li>
+                </ul>
+            </div>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="400" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=neither&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+        
+    <a href=" " class="toptakki" title="Efst á síðu"> &#8593; </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+:root{
+    --litur1: rgb(219, 91, 176);
+    --litur2: rgb(253, 167, 224);
+    --litur3: rgb(174, 74, 255);
+    --litur4: rgb(236, 213, 255);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: Ubuntu;
+}
+
+
+/*  topmenu  */
+.header h1{
+    display: block;
+    font-size: 3em;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    background-color: var(--litur2);
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: linear-gradient(var(--litur1) 60%,rgba(255, 255, 255, 0) 100%);
+    padding: 0.5em;
+    color: white;
+    padding-bottom: 2em;
+}
+
+.topnav{
+    display: flex;
+    margin: auto 0em;
+    justify-content: space-between;
+    max-width: 20em;
+}
+.topnav a{
+    font-size: 1.5em;
+    text-decoration: underline;
+    color: white;
+    margin: 0.5em;
+    font-style: italic;
+}
+.verkefni{
+    display: block;
+    float: right;
+    margin: 0; 
+}
+@media only screen and (max-width:37.5em){
+    .header{
+        position: relative;
+        grid-template-columns: 1fr;
+    }
+    .verkefni{
+        display: none;
+    }
+    .header h1{
+        border-bottom: white 2px dashed;
+        padding-bottom: 0.3em;
+    }
+}
+/*  inner links  */
+
+.innermenu{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+
+    box-shadow: var(--clolor1) .5em .5em 1em 1em;
+}
+.innermenu a{
+    list-style: none;
+    text-align: center;
+    background-image: linear-gradient(-45deg, rgb(253, 145, 217),var(--litur1));
+    color: white;
+    text-decoration: none;
+    border-right: 0;
+    border-bottom: white 1px solid;
+}
+.innermenu a:last-child{
+    border-bottom: 0;
+}
+
+@media only screen and (min-width:37.5em){
+    .innermenu{
+        flex-flow: row;
+        flex-wrap: wrap;
+        margin: 1em;
+    }
+    .innermenu a {
+        padding: 1em 1em;
+        border-bottom: 0;
+        border-right: white 1px solid;
+    }
+    .innermenu a:last-child{
+        border-right: 0;
+    }
+}
+
+/*  main  */
+
+.main{
+    display: grid;
+    margin: 4em 4em;
+    background-color: var(--litur4);
+    padding: 2em;
+    box-shadow: var(--litur1) 0.6em 0.6em 1.5em;
+    border-radius: 1em;
+}
+.main a{
+    font-size: 1.5em;
+    text-decoration: underline;
+    margin: 0.5em;
+    color: black;
+    font-style: italic;
+}
+
+@media only screen and (max-width:37.5em){
+    .main{
+        margin: 4em 2.5em;
+    }
+}
+
+/*  footer  */
+.foot{
+    display: grid;
+    background-image: linear-gradient(0deg, var(--litur1)70%, var(--litur2)95%);
+    color: white;
+    padding: 2em;
+    padding-top: 5em;
+}
+.foot ul li a{
+   color: white;
+   font-size: 1.5em;
+   font-style: italic;
+   text-decoration: underline;
+}
+.copy{
+    background-color: var(--litur1);
+    color: white;
+    margin: 0;
+}
+
+@media only screen and (min-width:48em){
+    .foot{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.toptakki{
+    position: fixed;
+    bottom: 1em;
+    right: 0.4em;
+    height: 1.2em;
+    width: 1.2em;
+    margin: 0 auto;
+
+    text-align: center;
+    font-size: 1.3em;
+    box-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.5em 0em;
+    border-radius: 100%;
+    text-decoration: none;
+    background-color: var(--litur3);
+    color: white; 
+}
+
+@media only screen and (min-width:37.5em){
+    .toptakki{
+        right: 1em;
+    }
+}
